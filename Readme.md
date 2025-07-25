@@ -28,6 +28,7 @@ Node.js_EMP is a simple and efficient task management application built with Nod
    ```
 3. **Open your browser:**
    Navigate to `http://localhost:3000` to use the app.
+   Deploy Link: https://node-js-emp-system-pr.onrender.com/
 
 ## Screenshots
 
