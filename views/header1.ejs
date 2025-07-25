@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Header</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+  <!-- Glass Effect CSS -->
+  <style>
+    body {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+    }
+
+    .navbar {
+      background-color: #F8F3CE !important;
+    }
+
+    .nav-link {
+      position: relative;
+      font-size: 21px !important;
+      font-weight: 700 !important;
+      color: #484847 !important;
+      text-decoration: none;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #000;
+      transition: width 0.5s ease;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    @media (max-width: 576px) {
+      form.d-flex {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .form-control {
+        width: 100% !important;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+
+    .btn-search {
+      background-color: #484847 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold fs-4 text-primary-emphasis" href="/">SmartTech Pvt. Ltd.</a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-4 gap-2">
+            <li class="nav-item">
+              <a class="nav-link active fs-5 fw-medium text-white" aria-current="page" href="/">DataAdd</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5 fw-medium text-white" href="/table">DataList</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search" action="/employee/search" method="GET">
+            <input class="form-control search me-2 border border-2" type="text" placeholder="Search Employee"
+              aria-label="Search" name="search" required />
+            <button class="btn btn-search fw-medium text-white border border-2" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6/4xr+I8FvuZyMP7dL47Hg93I7c5g/2rKnL04U/wZ9gGbaYtYlN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
